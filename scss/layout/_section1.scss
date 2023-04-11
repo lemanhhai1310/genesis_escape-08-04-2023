@@ -89,6 +89,11 @@
     padding-left: 10px;
     text-transform: inherit;
     @extend .section1__input;
+    span{
+      &:first-child{
+        @extend .line-clamp-1;
+      }
+    }
     .uk-icon{
       --uk-position-margin-offset: 12px;
       margin: var(--uk-position-margin-offset);

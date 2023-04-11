@@ -1,1 +1,61 @@
-.section4{}
+.section4{
+  &__box{
+    max-width: 100%;
+    width: 628px;
+    min-height: 174px;
+    background: rgba(1, 35, 29, 0.05);
+    border: 1px solid #000604;
+    box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
+    backdrop-filter: blur(50px);
+    border-radius: 6px;
+    &__txt1{
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.5;
+      @include fluidx(48px,30px,font-size);
+    }
+    &__txt2{
+      font-size: 20px;
+      line-height: 1.5;
+      @include fluidx(20px,18px,font-size);
+    }
+  }
+  &__card{
+    &:hover{
+      background: #01231D;
+    }
+    background: rgba(1, 35, 29, 0.05);
+    /* Primary/100 */
+    border: 1px solid #01231D;
+    /* Effect1 */
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 6px;
+    padding: 24px;
+    &__quote{
+      color: #979998;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: (48/40);
+    }
+    &__txt{
+      color: #EEFEFB;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    &__name{
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    &__txtsmall{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}
