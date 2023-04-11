@@ -1,0 +1,49 @@
+.header{
+  &__btn{
+    background: #{$primary-color};
+    color: #000604;
+    border-radius: 6px;
+    text-transform: inherit;
+    font-weight: 500;
+    font-family: $font-primary;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      margin-left: 8px;
+    }
+    &:hover{
+      background: rgba($primary-color,.8);
+    }
+  }
+  &__txtLogin{
+    color: #{$primary-color} !important;
+    font-weight: 500;
+    font-family: $font-primary;
+  }
+  &__item{
+    min-height: 88px;
+  }
+  .uk-navbar-item{
+    @extend .header__item;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        text-transform: inherit;
+        font-family: $font-primary;
+        font-weight: 500;
+        color: #5C605E;
+        @extend .header__item;
+      }
+      &:hover,
+      &.active,
+      &.uk-active{
+        >a{
+          color: #{$primary-color};
+        }
+      }
+    }
+  }
+}

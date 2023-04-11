@@ -1,0 +1,106 @@
+.section2{
+  &__item{
+    &:nth-child(n+2){
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #01231D;
+      @include media-breakpoint-up('m'){
+        margin-top: 24px;
+        padding-top: 24px;
+      }
+    }
+  }
+  &__btn{
+    background: rgba(214, 213, 142, 0.2);
+    border-radius: 6px;
+    text-transform: inherit;
+    color: #AF9533;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__txt{
+    color: #5C605E;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &__txt1{
+    color: #EEFEFB;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &__link{
+    color: #336A60 !important;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: underline;
+  }
+  &__radio{
+    display: none;
+  }
+  &__card{
+    padding: 16px;
+    background: #0C1B1B;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
+    backdrop-filter: blur(50px);
+    border-radius: 6px;
+    border: 2px solid transparent;
+    &:hover{
+      background: #01231D;
+    }
+    .section2__radio:checked ~ &{
+      background: #0C1B1B;
+      border-color: #AF9533;
+    }
+  }
+  &__slidenav{
+    --uk-position-margin-offset: 32px;
+    margin: var(--uk-position-margin-offset);
+    &__next{
+      width: 44px;
+      text-align: center;
+      >div{
+        background-color: rgba(175, 149, 51, 0.3);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7.5H14M9 1.5L14.2929 6.79289C14.6834 7.18342 14.6834 7.81658 14.2929 8.20711L9 13.5' stroke='%23EEFEFB' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      }
+      span{
+        color: #EEFEFB;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+    &__previous{
+      @extend .section2__slidenav__next;
+      >div{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__star{
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-flex;
+    .section2__card &{
+      width: 13px;
+      height: 13px;
+    }
+    &:nth-child(n+2){
+      margin-left: 4px;
+    }
+    &--on{
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0.444427L10.7193 5.0808L16 6.21636L12.4 10.2174L12.9443 15.5555L8 13.3919L3.05573 15.5555L3.6 10.2174L0 6.21636L5.28065 5.0808L8 0.444427Z' fill='%23DFB300'/%3E%3C/svg%3E%0A");
+    }
+    &--off{
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0.444427L10.7193 5.0808L16 6.21636L12.4 10.2174L12.9443 15.5555L8 13.3919L3.05573 15.5555L3.6 10.2174L0 6.21636L5.28065 5.0808L8 0.444427Z' fill='%235C605E'/%3E%3C/svg%3E%0A");
+    }
+  }
+}

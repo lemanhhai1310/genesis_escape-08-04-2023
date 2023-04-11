@@ -1,0 +1,101 @@
+.section1{
+  &__title{
+    color: #{$primary-color};
+    font-size: 70px;
+    @include fluidx(70px,36px,font-size);
+    line-height: (66/70);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    //white-space: nowrap;
+  }
+  &__card{
+    max-width: 100%;
+    width: 672px;
+
+    background: rgba(1, 35, 29, 0.05);
+    /* Primary/100 */
+
+    border: 1px solid #01231D;
+    /* Effect1 */
+
+    box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 12px;
+    padding: 24px;
+    &__txt{
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 500;
+      color: #5C605E;
+    }
+
+  }
+  &__legend{
+    color: #AF9533;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  &__label{
+    color: #5C605E;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &__input{
+    background: #000604 !important;
+    border: 1px solid #333836;
+    border-radius: 8px;
+    font-size: 14px;
+    &::placeholder{
+      color: #333836;
+    }
+    &:valid{
+      color: #fff;
+    }
+    &:focus{
+      border-color: #{$primary-color};
+    }
+  }
+  &__boxCount{
+    --uk-position-margin-offset: 12px;
+    margin: var(--uk-position-margin-offset);
+    & ~ .section1__input{
+      padding-right: 36px;
+    }
+  }
+  &__count{
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    &--add{
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 7.5L6 4L9.5 7.5' stroke='%235C605E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      &:hover{
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 7.5L6 4L9.5 7.5' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+    }
+    &--sub{
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 4.5L6 8L2.5 4.5' stroke='%235C605E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      &:hover{
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 4.5L6 8L2.5 4.5' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+  &__btnSelect{
+    padding-left: 10px;
+    text-transform: inherit;
+    @extend .section1__input;
+    .uk-icon{
+      --uk-position-margin-offset: 12px;
+      margin: var(--uk-position-margin-offset);
+    }
+    &:hover,
+    &:focus{
+      border-color: #{$primary-color} !important;
+    }
+  }
+}

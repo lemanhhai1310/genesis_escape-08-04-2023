@@ -12,4 +12,16 @@
       }
     }
   }
+  &-tooltip{
+    padding: 2px 12px;
+    background: #333836;
+    text-align: center;
+    min-width: 203px;
+    &-inner{
+      font-size: 14px;
+      line-height: 1.5;
+      color: #979998;
+      font-weight: 500;
+    }
+  }
 }

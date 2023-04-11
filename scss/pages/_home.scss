@@ -1,0 +1,98 @@
+.home{
+  &__section{
+    background-repeat: no-repeat !important;
+    background-position: 50% 0 !important;
+    //backdrop-filter: blur(50px) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    display: flex !important;
+    transition: all .3s;
+    >*{
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__section1{
+    background: linear-gradient(357.82deg, #000000 -6.54%,
+                rgba(0, 0, 0, 0) 36.23%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.8)),
+                var(--url);
+  }
+  &__section2{
+    background: linear-gradient(269.86deg, rgba(2, 13, 13, 0.15) 0.21%, #020D0D 99.97%), linear-gradient(86.1deg, #020D0D 31.33%, rgba(2, 13, 13, 0.15) 97.63%), var(--url), linear-gradient(225deg, rgba(50, 140, 108, 0.05) 0%, rgba(40, 125, 131, 0.05) 100%);
+  }
+  &__section3{
+    background: linear-gradient(90deg, #020D0D 34.2%,
+            rgba(0, 11, 9, 0.15) 135.35%),
+    var(--url);
+  }
+  &__section4{
+    background: linear-gradient(0deg, rgba(0, 11, 9, 0.96), rgba(0, 11, 9, 0.96)), var(--url);
+  }
+  &__section5{
+    background: linear-gradient(70.65deg, #000B09 33.65%, rgba(0, 11, 9, 0.3) 130.61%), var(--url);
+  }
+}
+.fp-watermark{
+  visibility: hidden;
+}
+#fp-nav{
+  visibility: hidden;
+  left: 72px !important;
+  $w:12px;
+  &:before,&:after{
+    content: "";
+    width: 1px;
+    height: 88px;
+    display: flex;
+    background: #333836;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:before{
+    bottom: calc(100% + #{$w});
+  }
+  &:after{
+    top: calc(100% + #{$w});
+  }
+  @include media-breakpoint-up('m'){
+    visibility: visible;
+  }
+  ul{
+    li{
+      width: inherit;
+      height: inherit;
+      margin: 0;
+      &:nth-child(n+2){
+        margin-top: 24px;
+      }
+      a{
+        >*{
+          $x:8px;
+          width: 8px !important;
+          height: 8px !important;
+          background: #01231D !important;
+          margin: 0 !important;
+          position: relative !important;
+          border-radius: 50%;
+          display: flex;
+          top: 0 !important;
+          left: 0 !important;
+          &:first-child{
+            display: none;
+          }
+        }
+        &:hover,
+        &.active{
+          >*{
+            background: #AF9533 !important;
+          }
+        }
+      }
+    }
+  }
+}

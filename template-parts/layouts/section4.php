@@ -1,0 +1,1 @@
+<div class="section uk-section home__section home__section4" style="--url:url(images/7c764253fe2281eec4dcb3921451482a.jpeg)"></div>
