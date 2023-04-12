@@ -11,6 +11,19 @@
         lazyLoad: true,
         navigation: true,
         navigationPosition: 'left',
+        afterRender: function(){
+            UIkit.util.on('.uk-modal', 'shown', function () {
+                // do something
+                console.log('show modal');
+                fullpage_api.setAllowScrolling(false, 'down');
+            });
+
+            UIkit.util.on('.uk-modal', 'hidden', function () {
+                // do something
+                console.log('hidden modal');
+                fullpage_api.setAllowScrolling(true);
+            });
+        }
     });
 </script>
 </div>

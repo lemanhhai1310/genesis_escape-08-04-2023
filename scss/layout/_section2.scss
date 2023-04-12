@@ -45,12 +45,35 @@
     backdrop-filter: blur(50px);
     border-radius: 6px;
     border: 2px solid transparent;
+    &__viewMore{
+      @include media-breakpoint-down('s'){
+        top: calc(100% + 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content !important;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 !important;
+      }
+    }
+    &--c1{
+      @include media-breakpoint-down('s'){
+        max-width: 100%;
+        width: 193px;
+      }
+    }
+    .uk-modal &,
     &:hover{
       background: #01231D;
     }
     .section2__radio:checked ~ &{
       background: #0C1B1B;
       border-color: #AF9533;
+    }
+    &__name{
+      color: #EEFEFB;
+      font-weight: 500;
     }
   }
   &__slidenav{

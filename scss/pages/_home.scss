@@ -7,6 +7,10 @@
     background-attachment: fixed !important;
     display: flex !important;
     transition: all .3s;
+    padding-top: 80px;
+    @include media-breakpoint-up('m'){
+      padding-bottom: 80px;
+    }
     >*{
       width: 100%;
       min-height: 100vh;

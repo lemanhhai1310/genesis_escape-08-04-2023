@@ -23,7 +23,9 @@
     font-family: $font-primary;
   }
   &__item{
-    min-height: 88px;
+    @include media-breakpoint-up('m'){
+      min-height: 88px;
+    }
   }
   .uk-navbar-item{
     @extend .header__item;

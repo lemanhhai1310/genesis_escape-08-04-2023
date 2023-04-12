@@ -1,0 +1,195 @@
+.modal{
+  &__acc{
+    &__btnCancel{
+      border-color: transparent !important;
+      color: #EEFEFB;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: inherit;
+      &:hover{
+        color: #{$primary-color};
+      }
+    }
+    &__tab{
+      >*{
+        >*{
+          font-size: 20px !important;
+          font-weight: 500;
+          text-transform: inherit !important;
+          padding: 14px 10px !important;
+          color: #5C605E !important;
+        }
+        &.uk-active{
+          >*{
+            color: #AF9533 !important;
+            border-color: currentColor !important;
+          }
+        }
+      }
+    }
+    &__forgotTxt{
+      color: #AF9533;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  &__viewAll{
+    .uk-modal-header{
+      background-color: transparent;
+      border: none;
+      @include media-breakpoint-up('m'){
+        padding: 36px;
+      }
+    }
+    .uk-modal-body{
+      @include media-breakpoint-up('m'){
+        padding: 36px;
+      }
+      &.c1{
+        @include media-breakpoint-up('m'){
+          padding-top: 0 !important;
+        }
+      }
+    }
+    .uk-modal-footer{
+      background-color: transparent;
+      border: none;
+      @include media-breakpoint-up('m'){
+        padding: 36px;
+      }
+    }
+    &__search{
+      width: 348px;
+      .uk-search-input{
+        background: #000604;
+        /* Neutraul/80 */
+
+        border: 1px solid #333836;
+        border-radius: 8px;
+        font-size: 14px;
+        &::placeholder{
+          color: #333836;
+        }
+        &:focus{
+          border-color: #{$primary-color};
+        }
+      }
+    }
+    &__navbar{
+      .uk-navbar-nav{
+        >li{
+          >a{
+            min-height: 40px;
+            text-transform: inherit;
+            color: #7D807E;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          &:hover,
+          &.uk-active{
+            >a{
+              color: #AF9533;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__booking{
+    &__label{
+      color: #5C605E;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &__radio{
+      display: none;
+    }
+    &__boxHour{
+      background: #000604;
+      /* Neutraul/80 */
+
+      border: 1px solid #333836;
+      /* Effect1 */
+
+      box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
+      backdrop-filter: blur(50px);
+      border-radius: 6px;
+      height: 72px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      .uk-disabled &{
+        box-shadow: 0px 0px 4px rgba(35, 35, 35, 0.7);
+        color: #333836;
+
+      }
+      .confirm &{
+        color: #DF7D46;
+      }
+      .modal__booking__radio:checked ~ &{
+        border-color: #AF9533;
+      }
+    }
+    &__boxDate{
+      &.tooltip1{
+        background: rgba(201, 62, 62, 0.1);
+        color: #C93E3E;
+        .modal__booking__boxDate__txt{
+          color: #C93E3E;
+        }
+        .modal__booking__boxDate__so{
+          color: #C93E3E;
+        }
+      }
+      cursor: pointer;
+      min-width: 83px;
+      height: 68px;
+      background: #000604;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border: 1px solid transparent;
+      .modal__booking__radio:checked ~ &{
+        border-color: #AF9533;
+      }
+      &__txt{
+        color: #5C605E;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      &__so{
+        color: #AF9533;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+  }
+  &__body{
+    padding: 24px 32px;
+  }
+  &__footer{
+    padding: 24px 32px;
+    background-color: transparent;
+    border-color: #333836;
+  }
+  &__dialog1{
+    background: #000604;
+    border-radius: 12px;
+  }
+  &__dialog2{
+    background: #0C1B1B;
+    border-radius: 12px;
+    border: 1px solid #01231D;
+    /* Effect1 */
+
+    box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
+    backdrop-filter: blur(50px);
+  }
+}

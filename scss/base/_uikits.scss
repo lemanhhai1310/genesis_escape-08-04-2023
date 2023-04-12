@@ -1,4 +1,23 @@
 .uk{
+  &-child{
+    &-width{
+      &-1{
+        &-7{
+          &-m{
+            >*{
+              @include media-breakpoint-up('m'){
+                width: calc(100% * 1 / 7.001);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-modal{
+    background: rgba(0, 6, 4, 0.3);
+    backdrop-filter: blur(7.5px);
+  }
   &-height{
     &-min{
       &-small{

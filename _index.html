@@ -1,10 +1,994 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Home - Genesis Escape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.14/dist/css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fullPage.js-master/src/css/fullpage.css" />
+    <link rel="stylesheet" href="style.css?v=1681239479">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.14/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.14/dist/js/uikit-icons.min.js"></script>
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+    <script src="js/app.js?v=1681239479"></script>
+</head>
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <nav class="header uk-navbar-container uk-navbar-transparent uk-position-top uk-position-fixed uk-position-z-index">
+        <div class="uk-container uk-container-expand">
+            <div uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
+                    <ul id="menu" class="uk-navbar-nav uk-visible@m">
+                        <li data-menuanchor="home"><a href="#home">Home</a></li>
+                        <li data-menuanchor="selectroom"><a href="#selectroom">Select Room</a></li>
+                        <li data-menuanchor="guidleplay"><a href="#guidleplay">Guidle play</a></li>
+                        <li data-menuanchor="testimonials"><a href="#testimonials">Testimonials</a></li>
+                        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__txtLogin uk-link-toggle">Login / Sign Up</a>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <a href="" class="header__btn uk-button uk-button-primary">Booking Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav><div id="fullpage">
+    <div class="section uk-section uk-flex-middle home__section home__section1" style="--url:url(images/How-Haunted-Houses-Measure-Fear-Web-1600x842.jpeg)">
+        <div class="uk-width">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                        <div class="section1__title">Genesis Escape</div>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <form class="section1__card uk-form-stacked uk-card uk-card-body">
+                            <fieldset class="uk-fieldset uk-grid-small uk-grid-24-m" uk-grid>
+
+                                <div class="uk-width-1-1">
+                                    <legend class="uk-legend uk-text-center section1__legend">Đặt phòng nhanh</legend>
+                                </div>
+
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-name">Họ và tên</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input section1__input" id="form-stacked-name" type="text" value="pham van A" placeholder="pham van A">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-email">Email</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input section1__input" id="form-stacked-email" type="email" placeholder="Nhập email của bạn">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-phone">Số điện thoại</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input section1__input" id="form-stacked-phone" type="tel" placeholder="Nhập số điện thoại của bạn">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-vitri">Vị trí</label>
+                                    <div class="uk-form-controls">
+                                        <div class="uk-width" uk-form-custom="target: > * > span:first-child">
+                                            <select aria-label="Custom controls">
+                                                <option value="">Chọn vị trí của bạn</option>
+                                                <option value="1">Option 01</option>
+                                                <option value="2">Option 02</option>
+                                                <option value="3">Option 03</option>
+                                                <option value="4">Option 04</option>
+                                            </select>
+                                            <button id="form-stacked-vitri" class="section1__btnSelect uk-width uk-text-left uk-position-relative uk-button uk-button-default" type="button" tabindex="-1">
+                                                <span></span>
+                                                <span class="uk-position-center-right uk-position-small" uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-phong">Phòng</label>
+                                    <div class="uk-form-controls">
+                                        <div class="uk-width" uk-form-custom="target: > * > span:first-child">
+                                            <select aria-label="Custom controls">
+                                                <option value="">Chọn phòng</option>
+                                                <option value="1">Option 01</option>
+                                                <option value="2">Option 02</option>
+                                                <option value="3">Option 03</option>
+                                                <option value="4">Option 04</option>
+                                            </select>
+                                            <button id="form-stacked-phong" class="section1__btnSelect uk-width uk-text-left uk-position-relative uk-button uk-button-default" type="button" tabindex="-1">
+                                                <span></span>
+                                                <span class="uk-position-center-right uk-position-small" uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-gio">Giờ</label>
+                                    <div class="uk-form-controls">
+                                        <div class="uk-width" uk-form-custom="target: > * > span:first-child">
+                                            <select aria-label="Custom controls">
+                                                <option value="">Chọn giờ</option>
+                                                <option value="1">Option 01</option>
+                                                <option value="2">Option 02</option>
+                                                <option value="3">Option 03</option>
+                                                <option value="4">Option 04</option>
+                                            </select>
+                                            <button id="form-stacked-gio" class="section1__btnSelect uk-width uk-text-left uk-position-relative uk-button uk-button-default" type="button" tabindex="-1">
+                                                <span></span>
+                                                <span class="uk-position-center-right uk-position-small" uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-soluong">Số lượng</label>
+                                    <div class="uk-form-controls">
+                                        <div class="uk-position-relative">
+                                            <div uk-tooltip="Tăng 1 số lượng người chơi sẽ được giảm 10%" class="section1__boxCount uk-position-center-right uk-position-small uk-flex uk-flex-column">
+                                                <span class="section1__count section1__count--add"></span>
+                                                <span class="section1__count section1__count--sub"></span>
+                                            </div>
+                                            <input class="uk-input section1__input" id="form-stacked-soluong" type="text" value="1" placeholder="Text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <label class="uk-form-label section1__label" for="form-stacked-voucher">Voucher</label>
+                                    <div class="uk-form-controls">
+                                        <div class="uk-width" uk-form-custom="target: > * > span:first-child">
+                                            <select aria-label="Custom controls">
+                                                <option value="">Chọn voucher</option>
+                                                <option value="1">Option 01</option>
+                                                <option value="2">Option 02</option>
+                                                <option value="3">Option 03</option>
+                                                <option value="4">Option 04</option>
+                                            </select>
+                                            <button id="form-stacked-voucher" class="section1__btnSelect uk-width uk-text-left uk-position-relative uk-button uk-button-default" type="button" tabindex="-1">
+                                                <span></span>
+                                                <span class="uk-position-center-right uk-position-small" uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-width-1-1">
+                                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-flex uk-flex-middle section1__card__txt">
+                                                <span>Tổng giá X2:</span>
+                                                <span class="uk-margin-small-left" style="color: #AF9533;">300.000.000VND</span>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto@s">
+                                            <a href="" class="header__btn uk-button uk-button-primary">Reserve now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="section uk-section uk-flex uk-flex-middle home__section home__section2" style="--url:url(images/7c92e406c720ce220d26e98af450a1cf.png)">
+    <div class="uk-width">
+        <div class="uk-container">
+            <div uk-grid>
+                <div class="uk-width-1-3@m">
+                    <div class="section3__txt">RooHIDE N SEEKm 1</div>
+                    <div class="uk-grid-12 item__12 uk-flex-middle" uk-grid>
+                        <div>
+                            <div class="section2__txt">Độ khó:</div>
+                        </div>
+                        <div>
+                            <div class="uk-position-relative uk-text-nowrap">
+                                <i class="section2__star section2__star--off"></i>
+                                <i class="section2__star section2__star--off"></i>
+                                <i class="section2__star section2__star--off"></i>
+                                <i class="section2__star section2__star--off"></i>
+                                <i class="section2__star section2__star--off"></i>
+                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                    <i class="section2__star section2__star--on"></i>
+                                    <i class="section2__star section2__star--on"></i>
+                                    <i class="section2__star section2__star--on"></i>
+                                    <i class="section2__star section2__star--on"></i>
+                                    <i class="section2__star section2__star--on"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid-12 item__12 uk-flex-middle" uk-grid>
+                        <div>
+                            <div class="section2__txt">Thể loại:</div>
+                        </div>
+                        <div>
+                            <div class="section2__txt1">Phá án - Hành động - Kinh dị</div>
+                        </div>
+                    </div>
+                    <div class="uk-grid-12 item__12 uk-flex-middle" uk-grid>
+                        <div>
+                            <div class="section2__txt">Số người chơi:</div>
+                        </div>
+                        <div>
+                            <div class="section2__txt">4 - 8</div>
+                        </div>
+                    </div>
+                    <div class="uk-grid-12 item__12 uk-flex-middle" uk-grid>
+                        <div>
+                            <div class="section2__txt">Địa chỉ:</div>
+                        </div>
+                        <div>
+                            <div class="section2__txt">189 Hoàng Cầu, HN</div>
+                        </div>
+                    </div>
+                    <div class="section2__item"></div>
+                    <div class="section2__txt">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không</div>
+                    <div><a href="" class="uk-link-text section2__link">Learn more</a></div>
+                    <a href="" class="header__btn uk-width item__24-12 uk-button uk-button-primary">Booking this room</a>
+                    <a href="" class="section2__btn uk-button uk-button-secondary uk-width item__16">Trailer</a>
+                </div>
+            </div>
+            <div class="item__46-23" uk-slider="sets: true;finite: true">
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-grid-32-m" uk-grid>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" checked>
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=1" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=2" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=3" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=4" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=5" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=6" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=7" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=8" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=9" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="uk-radio section2__radio" type="radio" name="radio2" >
+                                <div class="section2__card uk-card uk-card-body uk-padding-small">
+                                    <div class="uk-cover-container uk-border-rounded">
+                                        <img src="https://picsum.photos/161/107/?random=10" alt="" uk-cover="">
+                                        <canvas width="322" height="214"></canvas>
+                                    </div>
+                                    <div class="item__20">Room 1</div>
+                                    <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
+                                        <div>
+                                            <div class="section2__txt">Level:</div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-position-relative uk-text-nowrap">
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <i class="section2__star section2__star--off"></i>
+                                                <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                    <i class="section2__star section2__star--on"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small uk-link-toggle section2__slidenav section2__slidenav__previous" href="#" uk-slider-item="previous">
+                            <div></div>
+                            <span>back more</span>
+                        </a>
+                        <a class="uk-position-center-right-out uk-position-small uk-link-toggle section2__slidenav section2__slidenav__next" href="#" uk-slider-item="next">
+                            <div></div>
+                            <span>view more</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>    <div id="slideshow" class="section uk-position-relative" uk-slideshow="animation: fade">
+
+    <ul class="uk-slideshow-items uk-height-viewport" uk-height-viewport>
+        <li>
+            <div class="home__section home__section3 uk-height-viewport" style="--url:url(images/guidle0.jpeg)"></div>
+        </li>
+        <li>
+            <div class="home__section home__section3 uk-height-viewport" style="--url:url(images/guidle1.jpeg)"></div>
+        </li>
+        <li>
+            <div class="home__section home__section3 uk-height-viewport" style="--url:url(images/guidle2.jpeg)"></div>
+        </li>
+        <li>
+            <div class="home__section home__section3 uk-height-viewport" style="--url:url(images/guidle3.jpeg)"></div>
+        </li>
+        <li>
+            <div class="home__section home__section3 uk-height-viewport" style="--url:url(images/guidle4.jpeg)"></div>
+        </li>
+    </ul>
+
+    <div class="uk-position-cover uk-section uk-flex uk-flex-middle">
+        <div class="uk-width">
+            <div class="uk-container">
+                <div uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <div class="section3__title">HOW TO PLAY</div>
+                        <div id="slide" class="item__36-18" uk-slider="autoplay: true">
+
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                <ul class="uk-slider-items uk-child-width-1-1">
+                                    <li uk-slideshow-item="k>">
+                                        <div class="section3__txt">1. Understand the objective</div>
+                                        <div class="section3__desc item__12">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không mời mà tới? Sau một hồi tham gia thử thách gan dạ ở trường học cũ bị đồn </div>
+                                    </li>
+                                    <li uk-slideshow-item="k>">
+                                        <div class="section3__txt">2. Understand the objective</div>
+                                        <div class="section3__desc item__12">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không mời mà tới? Sau một hồi tham gia thử thách gan dạ ở trường học cũ bị đồn </div>
+                                    </li>
+                                    <li uk-slideshow-item="k>">
+                                        <div class="section3__txt">3. Understand the objective</div>
+                                        <div class="section3__desc item__12">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không mời mà tới? Sau một hồi tham gia thử thách gan dạ ở trường học cũ bị đồn </div>
+                                    </li>
+                                    <li uk-slideshow-item="k>">
+                                        <div class="section3__txt">4. Understand the objective</div>
+                                        <div class="section3__desc item__12">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không mời mà tới? Sau một hồi tham gia thử thách gan dạ ở trường học cũ bị đồn </div>
+                                    </li>
+                                    <li uk-slideshow-item="k>">
+                                        <div class="section3__txt">5. Understand the objective</div>
+                                        <div class="section3__desc item__12">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không mời mà tới? Sau một hồi tham gia thử thách gan dạ ở trường học cũ bị đồn </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <ul class="uk-slider-nav section3__dotnav uk-dotnav item__36-18"></ul>
+
+                        </div>
+                        <a href="" class="header__btn uk-button uk-button-primary uk-width item__36-18">
+                            Tiếp tục
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.6665 10H15.4998M11.3332 5L15.7439 9.41074C16.0694 9.73618 16.0694 10.2638 15.7439 10.5893L11.3332 15" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class="section uk-flex uk-flex-middle uk-section home__section home__section4" style="--url:url(images/7c764253fe2281eec4dcb3921451482a.jpeg)">
+        <div class="uk-width">
+            <div class="uk-container">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="section4__box uk-flex uk-flex-middle">
+                            <div class="uk-width">
+                                <div class="uk-child-width-expand" uk-grid>
+                                    <div>
+                                        <div class="uk-text-center" style="color: #3E7EC9;">
+                                            <div class="section4__box__txt1">100</div>
+                                            <div class="section4__box__txt2">Player</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-text-center" style="color: #AF9533;">
+                                            <div class="section4__box__txt1">100</div>
+                                            <div class="section4__box__txt2">Win</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-text-center" style="color: #DF7D46;">
+                                            <div class="section4__box__txt1">20</div>
+                                            <div class="section4__box__txt2">Return</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__48-24" uk-slider>
+
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-36-m" uk-grid>
+                                <li>
+                                    <div class="uk-card uk-card-body section4__card">
+                                        <div class="section4__card__quote">“</div>
+                                        <div class="section4__card__txt">Send texts, group messages, pictures, videos, and emoji from your phone or the web.</div>
+                                        <div class="uk-flex-bottom uk-flex-right item__16 uk-grid-16" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                    <canvas width="36" height="36"></canvas>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-position-relative uk-text-nowrap">
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item__16 section4__card__name">John Williams</div>
+                                                <div class="section4__card__txtsmall">Lead designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-card uk-card-body section4__card">
+                                        <div class="section4__card__quote">“</div>
+                                        <div class="section4__card__txt">Send texts, group messages, pictures, videos, and emoji from your phone or the web.</div>
+                                        <div class="uk-flex-bottom uk-flex-right item__16 uk-grid-16" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                    <canvas width="36" height="36"></canvas>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-position-relative uk-text-nowrap">
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item__16 section4__card__name">John Williams</div>
+                                                <div class="section4__card__txtsmall">Lead designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-card uk-card-body section4__card">
+                                        <div class="section4__card__quote">“</div>
+                                        <div class="section4__card__txt">Send texts, group messages, pictures, videos, and emoji from your phone or the web.</div>
+                                        <div class="uk-flex-bottom uk-flex-right item__16 uk-grid-16" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                    <canvas width="36" height="36"></canvas>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-position-relative uk-text-nowrap">
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item__16 section4__card__name">John Williams</div>
+                                                <div class="section4__card__txtsmall">Lead designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-card uk-card-body section4__card">
+                                        <div class="section4__card__quote">“</div>
+                                        <div class="section4__card__txt">Send texts, group messages, pictures, videos, and emoji from your phone or the web.</div>
+                                        <div class="uk-flex-bottom uk-flex-right item__16 uk-grid-16" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                    <canvas width="36" height="36"></canvas>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-position-relative uk-text-nowrap">
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item__16 section4__card__name">John Williams</div>
+                                                <div class="section4__card__txtsmall">Lead designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-card uk-card-body section4__card">
+                                        <div class="section4__card__quote">“</div>
+                                        <div class="section4__card__txt">Send texts, group messages, pictures, videos, and emoji from your phone or the web.</div>
+                                        <div class="uk-flex-bottom uk-flex-right item__16 uk-grid-16" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                    <canvas width="36" height="36"></canvas>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-position-relative uk-text-nowrap">
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item__16 section4__card__name">John Williams</div>
+                                                <div class="section4__card__txtsmall">Lead designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-card uk-card-body section4__card">
+                                        <div class="section4__card__quote">“</div>
+                                        <div class="section4__card__txt">Send texts, group messages, pictures, videos, and emoji from your phone or the web.</div>
+                                        <div class="uk-flex-bottom uk-flex-right item__16 uk-grid-16" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                                    <canvas width="36" height="36"></canvas>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-position-relative uk-text-nowrap">
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <i class="section2__star section2__star--off"></i>
+                                                    <div class="uk-position-center-left uk-overflow-hidden" style="width: 89%">
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                        <i class="section2__star section2__star--on"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item__16 section4__card__name">John Williams</div>
+                                                <div class="section4__card__txtsmall">Lead designer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+
+                        <div class="uk-visible@s">
+                            <a class="uk-position-center-left-out uk-position-small uk-link-toggle section2__slidenav section2__slidenav__previous" href="#" uk-slider-item="previous">
+                                <div></div>
+                            </a>
+                            <a class="uk-position-center-right-out uk-position-small uk-link-toggle section2__slidenav section2__slidenav__next" href="#" uk-slider-item="next">
+                                <div></div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden@m"></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>    <div class="section uk-flex uk-flex-middle uk-section home__section home__section5" style="--url:url(images/054c81b77532dd70e66731ed49175400.jpeg)">
+    <div class="uk-width">
+        <div class="uk-container uk-container-small">
+            <div class="uk-grid-139-m uk-child-width-auto@m uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <ul class="uk-list section5__list">
+                        <li class="phone">085858454354</li>
+                        <li class="mail">hfhfhfhf@gmail.com</li>
+                        <li class="map">49 Tran Hoang Na, Binh Loi, Can Tho</li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14900.478243978121!2d105.9347387!3d20.98784395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1681238826131!5m2!1svi!2s" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <form class="section1__card section5__width uk-form-stacked uk-card uk-card-body">
+                        <fieldset class="uk-fieldset uk-grid-small uk-grid-24-m" uk-grid>
+
+                            <div class="uk-width-1-1">
+                                <legend class="uk-legend uk-text-center section1__legend">Contact Us</legend>
+                            </div>
+
+                            <div class="uk-width-1-1">
+                                <label class="uk-form-label section1__label" for="form-stacked-name">Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input section1__input" id="form-stacked-name" type="text" value="" placeholder="pham van A">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <label class="uk-form-label section1__label" for="form-stacked-email">Email</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input section1__input" id="form-stacked-email" type="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <label class="uk-form-label section1__label" for="form-stacked-phone">Phone number</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input section1__input" id="form-stacked-phone" type="tel" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-1">
+                                <label class="uk-form-label section1__label" for="form-stacked-vitri">Your message</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea section1__input" rows="5" placeholder="Write text here ..." aria-label="Textarea"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-1">
+                                <div class="uk-flex-center uk-child-width-auto" uk-grid>
+                                    <div>
+                                        <button href="" class="header__btn uk-button uk-button-primary">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    <script type="text/javascript" src="assets/fullPage.js-master/vendors/easings.js"></script>
+    <script type="text/javascript" src="assets/fullPage.js-master/dist/fullpage.js"></script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: false,
+
+            //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+            css3:false,
+            anchors: ['home', 'selectroom', 'guidleplay', 'testimonials', 'contact'],
+            menu: '#menu',
+            lazyLoad: true,
+            navigation: true,
+            navigationPosition: 'left',
+        });
+    </script>
+</div>
+<!--/app-->
 </body>
 </html>
