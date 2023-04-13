@@ -27,6 +27,11 @@
       min-height: 88px;
     }
   }
+  .uk-logo{
+    img{
+      height: 40px;
+    }
+  }
   .uk-navbar-item{
     @extend .header__item;
   }

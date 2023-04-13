@@ -30,7 +30,7 @@
         <div uk-navbar>
 
             <div class="uk-navbar-left">
-                <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt=""></a>
+                <a href="" class="uk-navbar-item uk-logo"><img src="images/logo-genesis-trang.png" alt=""></a>
                 <ul id="menu" class="uk-navbar-nav uk-visible@m">
                     <li data-menuanchor="home"><a href="#home">Home</a></li>
                     <li data-menuanchor="selectroom"><a href="#selectroom">Select Room</a></li>

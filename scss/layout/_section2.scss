@@ -5,8 +5,10 @@
       padding-top: 18px;
       border-top: 1px solid #01231D;
       @include media-breakpoint-up('m'){
-        margin-top: 24px;
-        padding-top: 24px;
+        //margin-top: 24px;
+        //padding-top: 24px;
+        margin-top: 10px;
+        padding-top: 10px;
       }
     }
   }
