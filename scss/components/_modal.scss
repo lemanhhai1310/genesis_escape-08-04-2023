@@ -155,6 +155,7 @@
       align-items: center;
       text-align: center;
       border: 1px solid transparent;
+      box-sizing: border-box;
       .modal__booking__radio:checked ~ &{
         border-color: #AF9533;
       }
@@ -179,6 +180,11 @@
     background-color: transparent;
     border-color: #333836;
   }
+  &__header{
+    background-color: transparent;
+    border-color: #333836;
+    padding: 24px 32px;
+  }
   &__dialog1{
     background: #000604;
     border-radius: 12px;
@@ -192,4 +198,51 @@
     box-shadow: 0px 0px 4px rgba(2, 15, 20, 0.14);
     backdrop-filter: blur(50px);
   }
+  &__email{
+    &__txt{
+      color: #7D807E;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  &__confirm{
+    &__title{
+      color: #EEFEFB;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    &__box1{
+      border: 1px solid #333836;
+      border-radius: 6px;
+      color: #EEFEFB;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 12px;
+    }
+    &__txt1{
+      color: #5C605E;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    &__txt2{
+      font-size: 20px;
+      color: #5C605E;
+      line-height: 1.5;
+    }
+    &__label{
+      background: #AF9533;
+      border-radius: 4px;
+      color: #000604;
+      font-size: 16px;
+      padding: 4px 8px;
+    }
+  }
+}
+.w440{
+  width: 440px;
+}
+.w408{
+  width: 408px;
 }

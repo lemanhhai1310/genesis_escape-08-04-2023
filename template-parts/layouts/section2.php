@@ -53,7 +53,7 @@
                     <div class="section2__txt">Cốt truyện: TRỐN TÌM - Một trò chơi vốn đã quen thuộc với tuổi thơ của rất nhiều người nhưng sẽ ra sao nếu trò chơi ấy còn có cả những vị khách không</div>
                     <div><a href="" class="uk-link-text section2__link">Learn more</a></div>
                     <a href="#modal-bookroom" uk-toggle class="header__btn uk-width item__24-12 uk-button uk-button-primary">Booking this room</a>
-                    <a href="" class="section2__btn uk-button uk-button-secondary uk-width item__16">Trailer</a>
+                    <a href="#modal-media-youtube" uk-toggle class="section2__btn uk-button uk-button-secondary uk-width item__16">Trailer</a>
                 </div>
             </div>
             <div class="uk-position-relative item__46-23">
@@ -191,17 +191,29 @@
                     <?php endfor; ?>
                     <label>
                         <input class="uk-radio modal__booking__radio" type="radio" name="radio2" checked>
-                        <div class="modal__booking__boxDate">
+                        <div class="modal__booking__boxDate" id="datepicker">
                             <div class="uk-width">
                                 <div>
                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 8.33333H18M8 4.16667H5.66667C4.73325 4.16667 4.26654 4.16667 3.91002 4.34832C3.59641 4.50811 3.34144 4.76308 3.18166 5.07668C3 5.4332 3 5.89991 3 6.83333V14.8333C3 15.7668 3 16.2335 3.18166 16.59C3.34144 16.9036 3.59641 17.1586 3.91002 17.3183C4.26654 17.5 4.73325 17.5 5.66667 17.5H15.3333C16.2668 17.5 16.7335 17.5 17.09 17.3183C17.4036 17.1586 17.6586 16.9036 17.8183 16.59C18 16.2335 18 15.7668 18 14.8333V6.83333C18 5.89991 18 5.4332 17.8183 5.07668C17.6586 4.76308 17.4036 4.50811 17.09 4.34832C16.7335 4.16667 16.2668 4.16667 15.3333 4.16667H13M8 4.16667H13M8 4.16667V3.75C8 3.05964 7.44036 2.5 6.75 2.5C6.05964 2.5 5.5 3.05964 5.5 3.75V4.16667M13 4.16667V3.75C13 3.05964 13.5596 2.5 14.25 2.5C14.9404 2.5 15.5 3.05964 15.5 3.75V4.16667" stroke="#333836" stroke-width="2" stroke-linecap="round"/>
                                     </svg>
                                 </div>
-                                <div class="modal__booking__boxDate__txt item__2">Other days</div>
+                                <div id="selectedDates" class="modal__booking__boxDate__txt item__2">Other days</div>
                             </div>
                         </div>
                     </label>
+                    <script>
+                        flatpickr("#datepicker", {
+                            onChange: function(selectedDates, dateStr, instance) {
+                                var now = dateStr;
+                                var dateString = moment(now).format('DD/MM/YYYY');
+                                document.getElementById("selectedDates").innerHTML = dateString;
+                                console.log('selectedDates',selectedDates);
+                                console.log('dateStr',dateStr);
+                                console.log('instance',instance);
+                            },
+                        });
+                    </script>
                 </div>
             </div>
             <div class="item__36-18">
@@ -307,8 +319,15 @@
         </div>
     </div>
 </div>
+
+<div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" uk-video uk-responsive></iframe>
+    </div>
+</div>
 <script>
-    UIkit.modal('#modal-bookroom').show();
+    // UIkit.modal('#modal-bookroom').show();
 
     UIkit.util.on('#modal-bookroom', 'show', function () {
         // do something

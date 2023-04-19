@@ -1,0 +1,30 @@
+.nofication{
+  &__iconSuccess{
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' rx='6' fill='%233EC975' fill-opacity='0.1'/%3E%3Cpath d='M20.1663 13.5L14.8055 19.1719C14.6021 19.3871 14.2723 19.3871 14.0689 19.1719L11.833 16.8063M11.4163 23.9403C10.166 23.2171 9.10241 22.207 8.31545 21M11.4163 8.05968C10.166 8.78295 9.10241 9.79305 8.31545 11M7.07079 18.0833C6.91524 17.4141 6.83301 16.7166 6.83301 16C6.83301 15.2834 6.91524 14.586 7.07079 13.9167M14.333 6.98449C14.8735 6.88522 15.4305 6.83334 15.9997 6.83334C21.0623 6.83334 25.1663 10.9374 25.1663 16C25.1663 21.0626 21.0623 25.1667 15.9997 25.1667C15.4305 25.1667 14.8735 25.1148 14.333 25.0155' stroke='%233EC975' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    svg{
+      width: 32px;
+      height: 32px;
+      visibility: hidden;
+    }
+  }
+}
+.uk-notification{
+  width: 640px;
+  &-close{
+    color: #3EC975;
+  }
+  &-message{
+    background: #202E26;
+    /* shadow-sm */
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    color: #3EC975;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

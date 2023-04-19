@@ -40,6 +40,15 @@
     background: linear-gradient(70.65deg, #000B09 33.65%, rgba(0, 11, 9, 0.3) 130.61%), var(--url);
   }
 }
+#fullpage{
+  .uk-container{
+    @include media-breakpoint-up('m'){
+      padding-left: 190px;
+      padding-right: 190px;
+      max-width: none;
+    }
+  }
+}
 .fp-watermark{
   visibility: hidden;
 }
@@ -98,5 +107,15 @@
         }
       }
     }
+  }
+}
+.gj-datepicker{
+  position: relative;
+  .gj-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
