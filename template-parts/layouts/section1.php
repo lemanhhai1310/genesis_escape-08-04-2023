@@ -1,4 +1,4 @@
-<div class="section uk-section uk-flex-middle home__section home__section1" style="--url:url(images/How-Haunted-Houses-Measure-Fear-Web-1600x842.jpeg)">
+<div class="section uk-section uk-flex-middle home__section home__section1" style="--url:url(https://genesis-escape.vn/img/1.png)">
     <div class="uk-width">
         <div class="uk-container">
             <div class="uk-grid uk-flex-middle" uk-grid>

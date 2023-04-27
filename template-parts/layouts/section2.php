@@ -1,4 +1,4 @@
-<div class="section uk-section uk-flex uk-flex-middle home__section home__section2" style="--url:url(images/7c92e406c720ce220d26e98af450a1cf.png)">
+<div class="section uk-section uk-flex uk-flex-middle home__section home__section2" style="--url:url(https://genesis-escape.vn/images/room/bg/back_gone-min.png)">
     <div class="uk-width">
         <div class="uk-container">
             <div uk-grid>
@@ -58,7 +58,7 @@
             </div>
             <div class="uk-position-relative item__46-23">
                 <div class="uk-overflow-auto">
-                    <div class="uk-flex-nowrap uk-child-width-1-5@m uk-grid-small uk-grid-32-m" uk-grid>
+                    <div class="uk-flex-nowrap uk-child-width-1-5@m uk-grid-small uk-grid-32-m uk-grid-match" uk-grid>
                         <?php for ($i=1;$i<=5;$i++): ?>
                             <label>
                                 <input class="uk-radio section2__radio" type="radio" name="radio2" <?= ($i==1)?'checked':'' ?>>
