@@ -111,7 +111,7 @@
     </div>
 </div>
 <div id="modal-viewAll" class="modal__viewAll uk-modal-container" uk-modal>
-    <div class="uk-modal-dialog modal__dialog2">
+    <div class="uk-modal-dialog modal__dialog2 uk-height-1-1">
         <div class="uk-modal-header">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <h2 class="uk-modal-title section3__txt">View all room</h2>
