@@ -134,7 +134,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="uk-width-1-1">
+                <div class="uk-width-auto">
                     <form class="modal__viewAll__search uk-search uk-search-default">
                         <span uk-search-icon></span>
                         <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">

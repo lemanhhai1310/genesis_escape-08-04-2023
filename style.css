@@ -1202,7 +1202,7 @@ body {
   }
 }
 .modal__viewAll__search {
-  width: 348px;
+  width: 100%;
 }
 .modal__viewAll__search .uk-search-input {
   background: #000604;
