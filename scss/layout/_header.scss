@@ -16,6 +16,11 @@
     &:hover{
       background: rgba($primary-color,.8);
     }
+    &--c1{
+      background: transparent;
+      border-color: #{$primary-color};
+      color: #{$primary-color};
+    }
   }
   &__txtLogin{
     color: #{$primary-color} !important;

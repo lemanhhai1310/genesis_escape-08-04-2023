@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/alexandra-personal-use" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.14/dist/css/uikit.min.css" />
@@ -48,6 +49,9 @@
             <div class="uk-navbar-right">
                 <div class="uk-navbar-item">
                     <a href="#modal-acc" uk-toggle class="header__txtLogin uk-link-toggle">Login / Sign Up</a>
+                </div>
+                <div class="uk-navbar-item">
+                    <a href="" class="header__btn header__btn--c1 uk-button uk-button-primary">Thành viên</a>
                 </div>
                 <div class="uk-navbar-item">
                     <a href="" class="header__btn uk-button uk-button-primary">Booking Now</a>

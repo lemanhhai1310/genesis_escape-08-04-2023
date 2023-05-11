@@ -6,7 +6,11 @@
 @font-face{
   font-family:'LEXANDRAMnletter';
   font-display: swap;
-  src:url('fonts/alexandra-mnletter/ALEXANDRA-Mnletter.ttf') format('ttf');
+  //src:url('fonts/alexandra-mnletter/ALEXANDRA-Mnletter.ttf') format('ttf');
+  src:
+  url('fonts/alexandra-mnletter/ALEXANDRA-Outline.otf') format('opentype'),
+  url('fonts/alexandra-mnletter/ALEXANDRA-Outline.ttf') format('truetype');
+
   font-weight:normal;
   font-style:normal;
 }

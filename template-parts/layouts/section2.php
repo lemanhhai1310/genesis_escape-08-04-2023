@@ -59,15 +59,23 @@
             <div class="uk-position-relative item__46-23">
                 <div class="uk-overflow-auto">
                     <div class="uk-flex-nowrap uk-child-width-1-5@m uk-grid-small uk-grid-32-m uk-grid-match" uk-grid>
-                        <?php for ($i=1;$i<=5;$i++): ?>
+                        <?php
+                        $data = array(
+                            'Gone - Mất Tích (1990)',
+                            'The Morgue (Giao Ước Máu)',
+                            'Gone - Hide N Seek (Trốn Tìm)',
+                            'Coming Soon',
+                            'Coming Soon',
+                        );
+                        foreach ($data as $k=>$v): ?>
                             <label>
                                 <input class="uk-radio section2__radio" type="radio" name="radio2" <?= ($i==1)?'checked':'' ?>>
                                 <div class="section2__card section2__card--c1 uk-card uk-card-body uk-padding-small">
                                     <div class="uk-cover-container uk-border-rounded">
-                                        <img src="https://picsum.photos/161/107/?random=<?= $i ?>" alt="" uk-cover="">
+                                        <img src="https://picsum.photos/161/107/?random=<?= $k ?>" alt="" uk-cover="">
                                         <canvas width="322" height="214"></canvas>
                                     </div>
-                                    <div class="item__20 section2__card__name">Room 1</div>
+                                    <div class="item__20 section2__card__name"><?= $v ?></div>
                                     <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
                                         <div>
                                             <div class="section2__txt">Level:</div>
@@ -91,7 +99,7 @@
                                     </div>
                                 </div>
                             </label>
-                        <?php endfor; ?>
+                        <?php endforeach; ?>
                     </div>
                 </div>
                 <a uk-toggle="" class="section2__card__viewMore uk-position-center-right-out uk-position-small uk-link-toggle section2__slidenav section2__slidenav__next" href="#modal-viewAll">
@@ -114,13 +122,19 @@
                             <ul class="uk-navbar-nav">
                                 <li class="uk-active"><a href="">Mới ra</a></li>
                                 <li><a href="">Zombie</a></li>
-                                <li><a href="">Nhà ma trẻ em</a></li>
                                 <li><a href="">Ác Quỷ</a></li>
+                                <li><a href="">Kinh dị</a></li>
+                                <li><a href="">Trinh thám</a></li>
+                                <li><a href="">Tâm linh</a></li>
+                                <li><a href="">Phá án</a></li>
+                                <li><a href="">Hành động</a></li>
+                                <li><a href="">Bùa ngải</a></li>
+                                <li><a href="">Huyền bí</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <div class="uk-width-auto@s">
+                <div class="uk-width-1-1">
                     <form class="modal__viewAll__search uk-search uk-search-default">
                         <span uk-search-icon></span>
                         <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
@@ -129,16 +143,24 @@
             </div>
         </div>
         <div class="uk-modal-body c1" uk-overflow-auto>
-            <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-grid-24-m" uk-grid>
-                <?php for ($i=1;$i<=40;$i++): ?>
+            <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-grid-24-m uk-grid-match" uk-grid>
+                <?php
+                $data = array(
+                    'Gone - Mất Tích (1990)',
+                    'The Morgue (Giao Ước Máu)',
+                    'Gone - Hide N Seek (Trốn Tìm)',
+                    'Coming Soon',
+                    'Coming Soon',
+                );
+                foreach ($data as $k=>$v): ?>
                     <label>
                         <input class="uk-radio section2__radio" type="radio" name="radio2" <?= ($i==1)?'checked':'' ?>>
-                        <div class="section2__card uk-card uk-card-body uk-padding-small">
+                        <div class="section2__card section2__card--c1 uk-card uk-card-body uk-padding-small">
                             <div class="uk-cover-container uk-border-rounded">
-                                <img src="https://picsum.photos/161/107/?random=<?= $i ?>" alt="" uk-cover="">
+                                <img src="https://picsum.photos/161/107/?random=<?= $k ?>" alt="" uk-cover="">
                                 <canvas width="322" height="214"></canvas>
                             </div>
-                            <div class="item__20 section2__card__name">Room 1</div>
+                            <div class="item__20 section2__card__name"><?= $v ?></div>
                             <div class="uk-grid-12 uk-flex-middle item__6" uk-grid>
                                 <div>
                                     <div class="section2__txt">Level:</div>
@@ -162,7 +184,7 @@
                             </div>
                         </div>
                     </label>
-                <?php endfor; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

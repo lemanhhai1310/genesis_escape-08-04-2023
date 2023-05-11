@@ -3,11 +3,11 @@
     <ul class="uk-slideshow-items uk-height-viewport" uk-height-viewport>
         <?php
         $data = array(
-            'images/guidle0.jpeg',
-            'images/guidle1.jpeg',
-            'images/guidle2.jpeg',
-            'images/guidle3.jpeg',
-            'images/guidle4.jpeg',
+            'https://genesis-escape.vn/img/how_1.png',
+            'https://genesis-escape.vn/img/how_2.png',
+            'https://genesis-escape.vn/img/how_3.png',
+            'https://genesis-escape.vn/img/how_4.png',
+            'https://genesis-escape.vn/img/how_5.png',
         );
         foreach ($data as $k=>$v): ?>
             <li>
@@ -29,11 +29,11 @@
                                 <ul class="uk-slider-items uk-child-width-1-1">
                                     <?php
                                     $data = array(
-                                        'images/guidle0.jpeg',
-                                        'images/guidle1.jpeg',
-                                        'images/guidle2.jpeg',
-                                        'images/guidle3.jpeg',
-                                        'images/guidle4.jpeg',
+                                        'https://genesis-escape.vn/img/how_1.png',
+                                        'https://genesis-escape.vn/img/how_2.png',
+                                        'https://genesis-escape.vn/img/how_3.png',
+                                        'https://genesis-escape.vn/img/how_4.png',
+                                        'https://genesis-escape.vn/img/how_5.png',
                                     );
                                     foreach ($data as $k=>$v): ?>
                                         <li uk-slideshow-item="<?= k ?>>">

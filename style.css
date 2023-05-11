@@ -10,7 +10,7 @@ body {
 @font-face {
   font-family: "LEXANDRAMnletter";
   font-display: swap;
-  src: url("fonts/alexandra-mnletter/ALEXANDRA-Mnletter.ttf") format("ttf");
+  src: url("fonts/alexandra-mnletter/ALEXANDRA-Outline.otf") format("opentype"), url("fonts/alexandra-mnletter/ALEXANDRA-Outline.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1511,6 +1511,11 @@ body {
 }
 .header__btn:hover {
   background: rgba(175, 149, 51, 0.8);
+}
+.header__btn--c1 {
+  background: transparent;
+  border-color: #AF9533;
+  color: #AF9533;
 }
 .header__txtLogin {
   color: #AF9533 !important;
